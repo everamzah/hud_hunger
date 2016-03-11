@@ -207,7 +207,7 @@ local function hunger_globaltimer(dtime)
 									size = math.random()+0.5,
 									collisiondetection = true,
 									vertical = false,
-									texture = "sprint_particle.png",
+									texture = "default_dirt.png" --"sprint_particle.png",
 								})
 							end
 						end
