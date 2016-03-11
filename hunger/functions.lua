@@ -207,7 +207,7 @@ local function hunger_globaltimer(dtime)
 			--Lower the player's stamina by dtime if he/she is sprinting and set his/her state to 0 if stamina is zero
 			if info["sprinting"] == true then 
 				--info["stamina"] = info["stamina"] - dtime
-				update_hunger(player, hunger.players[name].lvl - dtime)
+				update_hunger(player, hunger.players[name].lvl - SPRINT_DRAIN * dtime)
 				--if info["stamina"] <= 0 then
 				if hunger.players[name].lvl <= 0 then
 					--info["stamina"] = 0
